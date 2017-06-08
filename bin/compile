@@ -135,7 +135,7 @@ echo "Setting up MONGO_URL in .profile.d"
 
 echo 'Looking for a service labelled "compose-for-mongodb" in the following $VCAP_SERVICES...'
 echo $VCAP_SERVICES
-echo $MONGO_URL
+echo 'Mongo URL is :' $MONGO_URL
 
 
 mkdir -p "$BUILD_DIR"/.profile.d
