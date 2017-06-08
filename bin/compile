@@ -133,8 +133,10 @@ echo "Installing meteor bundle" | indent
 ############################################
 echo "Setting up MONGO_URL in .profile.d"
 
-echo 'Looking for a service labelled "mongolab" in the following $VCAP_SERVICES...'
+echo 'Looking for a service labelled "compose-for-mongodb" in the following $VCAP_SERVICES...'
 echo $VCAP_SERVICES
+echo $MONGO_URL
+
 
 mkdir -p "$BUILD_DIR"/.profile.d
 cat | tee "$BUILD_DIR"/.profile.d/mongo.sh <<EOF
